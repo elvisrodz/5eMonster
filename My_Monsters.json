@@ -1,0 +1,1923 @@
+{
+	"siteVersion": "1.131.6",
+	"_meta": {
+		"sources": [
+			{
+				"json": "test",
+				"abbreviation": "ELVIS",
+				"full": "My Monsters",
+				"url": "https://raw.githubusercontent.com/elvisrodz/HStEST1/main/My_Monsters.json",
+				"authors": [
+					"Elvis"
+				],
+				"convertedBy": [
+					"Elvis"
+				]
+			}
+		],
+		"dateAdded": 1625498812,
+		"dateLastModified": 1625498812
+	},
+	"monster": [
+		{
+			"name": "Better Halaster Blackcloak v2",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "test",
+			"page": 310,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@item robe of the archmagi}",
+						"{@item ring of protection} +3"
+					]
+				}
+			],
+			"hp": {
+				"formula": "50d6 + 200",
+				"average": 375
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 18,
+			"int": 24,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"int": "+17",
+				"wis": "+14",
+				"str": "+3",
+				"con": "+14",
+				"cha": "+7",
+				"dex": "+7"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+21",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 120 ft."
+			],
+			"passive": 21,
+			"resist": [
+				"fire",
+				{
+					"special": "spell damage"
+				},
+				{
+					"resist": [
+						"lightning"
+					],
+					"note": "(granted by the blast scepter, see \"Special Equipment\" below)"
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Infernal",
+				"Undercommon"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will. He can cast {@spell fly} and {@spell lightning bolt} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
+					],
+					"will": [
+						"{@spell disguise self}, {@spell shield}",
+						"{@spell invisibility}, {@spell misty step}, {@spell counterspell}*"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fly}",
+							"{@spell lightning bolt}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}*",
+								"{@spell dissonant whispers}",
+								"{@spell mage armor}*",
+								"{@spell magic missile}",
+								"{@spell shield}*",
+								"{@spell silent image}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell darkvision}",
+								"{@spell mirror image}**",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}*",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}",
+								"{@spell lightning bolt}",
+								"{@spell slow}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell fire shield}**",
+								"{@spell Mordenkainen's faithful hound}**",
+								"{@spell Otiluke's resilient sphere}\"",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell destructive wave}",
+								"{@spell dominate person}",
+								"{@spell steel wind strike|XGE}",
+								"{@spell synaptic static|XGE}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 3
+						},
+						"7": {
+							"spells": [
+								"{@spell crown of stars|XGE}**",
+								"{@spell finger of death}",
+								"{@spell power word pain|XGE}",
+								"{@spell prismatic spray}",
+								"{@spell symbol}",
+								"{@spell teleport}"
+							],
+							"slots": 3
+						},
+						"8": {
+							"spells": [
+								"{@spell dark star|EGW}",
+								"{@spell mind blank}**"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell time ravage|EGW}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Halaster wears a robe of eyes that lets him see in all directions, gives him darkvision out to a range of 120 feet, grants advantage on Wisdom (Perception) checks that rely on sight, and allows him to see {@condition invisible} creatures and objects, as well as into the Ethereal Plane, out to a range of 120 feet.",
+						"Halaster wields a blast scepter (a very rare magic item that requires attunement). It can be used as an arcane focus. Whoever is attuned to the blast scepter gains resistance to fire and lightning damage and can, as an action, use it to cast thunderwave as a 4th-level spell (save {@dc 16}) without expending a spell slot.",
+						"Halaster also wears a horned ring (a very rare magic item that requires attunement), which allows an attuned wearer to ignore Undermountain's magical restrictions (see \"Alterations to Magic\")."
+					]
+				},
+				{
+					"name": "Arcane Recovery (1/Day)",
+					"entries": [
+						"When he finishes a short rest, Halaster recovers all his spell slots of 5th level and lower."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Halaster fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Halaster dies in Undermountain, he revives after {@dice 1d10} days, with all his hit points and any missing body parts restored. His new body appears in a random safe location in Undermountain."
+					]
+				},
+				{
+					"name": "Improved Abjuration",
+					"entries": [
+						"When Halster casts an abjuration spell that requires you to make an ability check as a part of casting that spell (as in Counterspell and Dispel Magic), he adds his proficiency bonus to that ability check."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Halaster Blackcloak has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Ward",
+					"entries": [
+						"When Halaster casts an abjuration spell of 1st level or higher, he can simultaneously use a strand of the spell's magic to create a magical ward on himself that lasts until he finishes a long rest. The ward has a hit point maximum equal to twice your wizard level + your Intelligence modifier (47). Whenever you take damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, you take any remaining damage.",
+						"While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+					]
+				},
+				{
+					"name": "Contingency!",
+					"entries": [
+						"When Halaster is reduced to half his hit points or less his contingency spell {@spell Otiluke's resilient sphere} triggers while in the sphere he recasts any buffs as well drinks his potions "
+					]
+				},
+				{
+					"name": "Magic Items",
+					"entries": [
+						"Halaster has the following magic items",
+						"•A vial of {@item oil of slipperiness}  He applies this to himself before the ",
+						"  adventurers reach Area 33",
+						"• 3 {@item potion of greater healing}",
+						"• 2 {@item potion of superior healing}",
+						"• A {@item potion of supreme healing}",
+						"• A {@item dust of sneezing and choking}",
+						"• A {@item bead of force}",
+						"• A {@item gem of brightness}",
+						"• A {@item rope of entanglement}"
+					]
+				},
+				{
+					"name": "Split Mind",
+					"entries": [
+						"Halaster can concentrate on up to 2 spells one of which must be 5th level or lower "
+					]
+				},
+				{
+					"name": "Spell Sniper",
+					"entries": [
+						"When Halaster casts a spell that requires an attack",
+						"roll the spell’s range is doubled and the attacks ignore half and",
+						"three-quarters cover"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Blast Scepter",
+					"entries": [
+						"Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes {@dice 5d8} thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast Spell",
+					"entries": [
+						"Halaster casts a spell of 3rd level or lower."
+					]
+				},
+				{
+					"name": "Use Magic Item",
+					"entries": [
+						"Halster uses a magic item that takes an action aside from his blast scepter"
+					]
+				},
+				{
+					"name": "Master of Counterspelling",
+					"entries": [
+						"Halaster casts {@spell counterspell} and his ability to take reactions recharges. "
+					]
+				},
+				{
+					"name": "Spell Ward (Costs 2 Actions)",
+					"entries": [
+						"Halaster expends a spell slot of 4th level or lower and gains 5 temporary hit points per level of the slot."
+					]
+				},
+				{
+					"name": "You shall BLAST!! (Cost 2 Actions)",
+					"entries": [
+						"Halaster uses his Blast Scepter"
+					]
+				},
+				{
+					"name": "Gibbering Madness (Cost 3 Actions)",
+					"entries": [
+						"Halaster projects his madness to all nearby Each creature within 20 feet of him suffers the effects of a {@spell dissonant whispers} spell"
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "Lair: Laser Grid Partition",
+					"entries": [
+						"The room is divided into 8 quadrants (4 on floor and room halfway up) anyone aside from Halaster moving through the barrier takes {@damage 10d6} radiant damage."
+					]
+				},
+				{
+					"name": "Lair: Laser Grid Lockdown",
+					"entries": [
+						"A fine mesh of lasers covers the room causing anyone but Halaster to take {@damage 2d6} radiant damage for every 5ft. of movement"
+					]
+				},
+				{
+					"name": "Lair: Boon or Bane?!",
+					"entries": [
+						"Roll a {@dice d4} and draw a card from the Elder Rune deck say the name of the elder rune to a player and ask Boon or Bane if boon Halster gains the effect of the Boon if Bane the player must save against the Bane effect {@dc 20}"
+					]
+				},
+				{
+					"name": "Lair: Who's Who?",
+					"entries": [
+						"4 Illusionary Duplicates of Halaster appear Halaster is one of them if a wrong duplicate is picked a {@spell fireball} will trigger at its location duplicates have an AC of 21"
+					]
+				},
+				{
+					"name": "Corrupting Weave",
+					"entries": [
+						"Halaster animates a 5th level or lower spell that was cast the last turn "
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM"
+			},
+			"fluff": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"As the master of Undermountain, Halaster can alter the entire dungeon to some extent. His lair actions and regional effects don't extend beyond Undermountain."
+										]
+									},
+									{
+										"type": "section",
+										"entries": [
+											"Halaster, the Mad Mage of Undermountain, is the deranged individual behind most of the traps and horrors found in the great dungeon under Waterdeep. Undermountain is his home, an amusement gallery in which others perform to entertain him.",
+											"The Mad Mage knows the ever-changing ways of Undermountain as no one else does, for he is the one who controls those changes. He prefers to remain unseen, skulking about invisibly or peering through scrying sensors that resemble wide-open eyes surrounded by sparkling motes of light.",
+											"Halaster's abilities far exceed those of most mortal wizards. His expertise with magic gates allows him to travel far and wide to engage in magical research. He spends much of his time creating gates, moving them around, and casting elder runes on them. Halaster's gates connect the different levels of Undermountain, thus enabling him to bring new monsters into the dungeon to replenish those that die or escape. Even as groups of adventurers try to gain decisive control of just a small section of Undermountain's halls, Halaster constantly alters the dungeon's perils to thwart them.",
+											"Halaster's true form is that of a tall, gaunt, male human, but he uses magic to take on many other visages and shapes. No matter what form he wears, the Mad Mage giggles and mutters incessantly. Contrary to appearances, however, Halaster is alert and attentive to the activities and preparations of all beings near him. He never willingly enters combat without first casting mage armor and mind blank on himself."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Halaster takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Halaster targets a volume of unoccupied space or solid stone no larger than four 10-foot cubes within 30 feet of him, turning the open space to solid, worked stone or vice versa.",
+											"Halaster causes one door or archway within 30 feet of him to disappear and be replaced by a blank wall, or he restores a door or an archway previously removed in this way.",
+											"Halaster deactivates or reactivates one of Undermountain's magic gates. The gate must be within 120 feet of him."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"When Halaster is in Undermountain, the following effects can occur in any location within the dungeon or in any extraplanar extension of the dungeon:",
+									{
+										"type": "list",
+										"items": [
+											"A magical scrying sensor appears, taking the form of a ghostly, 1-foot-diameter humanoid eye surrounded by motes of light. The sensor is stationary, though Halaster can reorient the eye to face in any direction. Halaster can see through the eye as though he was in its space. The eye can't be harmed or dispelled, but it winks out within an antimagic field. A scrying eye lasts until Halaster ends the effect (no action required).",
+											"A minor illusory effect is triggered, as though Halaster had cast {@spell minor illusion} in an area. Common illusions include the echo of rattling chains, the distant sound of explosive spells being cast, a dusty cloak or a rusty helm floating as though worn by an invisible figure, and illusory footprints appearing on a dusty floor.",
+											"Silent apparitions of dead adventurers drift through halls and rooms as though they are lost. An apparition can't be harmed, and it doesn't acknowledge creatures or objects in any way. It can't be dispelled but is suppressed within an antimagic field."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/WDMM/Halaster Blackcloak.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/WDMM/Halaster Blackcloak.png?v=1.123.0",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"D",
+				"DR",
+				"E",
+				"I",
+				"U"
+			],
+			"damageTags": [
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible",
+				"stunned",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Halaster Blackcloak",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "test",
+			"page": 310,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"condition": "Black Robe of Eyes",
+					"braces": true
+				}
+			],
+			"hp": {
+				"special": "315 + 47 (Arcane Ward)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 18,
+			"int": 24,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"int": "+14",
+				"wis": "+11"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+21",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 120 ft."
+			],
+			"passive": 21,
+			"resist": [
+				"fire",
+				{
+					"special": "spell damage"
+				},
+				{
+					"resist": [
+						"lightning"
+					],
+					"note": "(granted by the blast scepter, see \"Special Equipment\" below)"
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Infernal",
+				"Undercommon"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 14} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will. He can cast {@spell fly} and {@spell lightning bolt} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
+					],
+					"will": [
+						"{@spell disguise self}, {@spell shield}",
+						"{@spell invisibility}, {@spell misty step}, {@spell counterspell}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fly}",
+							"{@spell lightning bolt}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell silent image}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell darkvision}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell fire shield}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell Synaptic Static}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell eyebite}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 3
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell power word pain}",
+								"{@spell teleport}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dark star}",
+								"{@spell mind blank}"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Halaster wears a robe of eyes that lets him see in all directions, gives him darkvision out to a range of 120 feet, grants advantage on Wisdom (Perception) checks that rely on sight, and allows him to see {@condition invisible} creatures and objects, as well as into the Ethereal Plane, out to a range of 120 feet.",
+						"Halaster wields a blast scepter (a very rare magic item that requires attunement). It can be used as an arcane focus. Whoever is attuned to the blast scepter gains resistance to fire and lightning damage and can, as an action, use it to cast thunderwave as a 4th-level spell (save {@dc 16}) without expending a spell slot.",
+						"Halaster also wears a horned ring (a very rare magic item that requires attunement), which allows an attuned wearer to ignore Undermountain's magical restrictions (see \\\\\\\"Alterations to Magic\\\\\\\")."
+					]
+				},
+				{
+					"name": "Arcane Recovery (1/Day)",
+					"entries": [
+						"When he finishes a short rest, Halaster recovers all his spell slots of 5th level and lower."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Halaster fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Halaster dies in Undermountain, he revives after {@dice 1d10} days, with all his hit points and any missing body parts restored. His new body appears in a random safe location in Undermountain."
+					]
+				},
+				{
+					"name": "Improved Abjuration",
+					"entries": [
+						"When Halster casts an abjuration spell that requires you to make an ability check as a part of casting that spell (as in Counterspell and Dispel Magic), he adds his proficiency bonus to that ability check."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Halaster Blackcloak has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Blast Scepter",
+					"entries": [
+						"Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes {@dice 5d8} thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast Spell",
+					"entries": [
+						"Halaster casts a spell of 3rd level or lower."
+					]
+				},
+				{
+					"name": "Use Magic Item",
+					"entries": [
+						"Halster uses a magic item that takes an action aside from his blast scepter"
+					]
+				},
+				{
+					"name": "Spell Ward (Costs 2 Actions)",
+					"entries": [
+						"Halaster expends a spell slot of 4th level or lower and gains 5 temporary hit points per level of the slot."
+					]
+				},
+				{
+					"name": "Gibbering Madness (Cost 3 Actions)",
+					"entries": [
+						"Halaster projects his madness to all nearby Each creature within 20 feet of him must make a {@dc 20} Wisdom saving throw or suffer {@damage 3d6} psychic damage and the effects of the confusion spell"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM"
+			},
+			"fluff": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"As the master of Undermountain, Halaster can alter the entire dungeon to some extent. His lair actions and regional effects don't extend beyond Undermountain."
+										]
+									},
+									{
+										"type": "section",
+										"entries": [
+											"Halaster, the Mad Mage of Undermountain, is the deranged individual behind most of the traps and horrors found in the great dungeon under Waterdeep. Undermountain is his home, an amusement gallery in which others perform to entertain him.",
+											"The Mad Mage knows the ever-changing ways of Undermountain as no one else does, for he is the one who controls those changes. He prefers to remain unseen, skulking about invisibly or peering through scrying sensors that resemble wide-open eyes surrounded by sparkling motes of light.",
+											"Halaster's abilities far exceed those of most mortal wizards. His expertise with magic gates allows him to travel far and wide to engage in magical research. He spends much of his time creating gates, moving them around, and casting elder runes on them. Halaster's gates connect the different levels of Undermountain, thus enabling him to bring new monsters into the dungeon to replenish those that die or escape. Even as groups of adventurers try to gain decisive control of just a small section of Undermountain's halls, Halaster constantly alters the dungeon's perils to thwart them.",
+											"Halaster's true form is that of a tall, gaunt, male human, but he uses magic to take on many other visages and shapes. No matter what form he wears, the Mad Mage giggles and mutters incessantly. Contrary to appearances, however, Halaster is alert and attentive to the activities and preparations of all beings near him. He never willingly enters combat without first casting mage armor and mind blank on himself."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Halaster takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Halaster targets a volume of unoccupied space or solid stone no larger than four 10-foot cubes within 30 feet of him, turning the open space to solid, worked stone or vice versa.",
+											"Halaster causes one door or archway within 30 feet of him to disappear and be replaced by a blank wall, or he restores a door or an archway previously removed in this way.",
+											"Halaster deactivates or reactivates one of Undermountain's magic gates. The gate must be within 120 feet of him."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"When Halaster is in Undermountain, the following effects can occur in any location within the dungeon or in any extraplanar extension of the dungeon:",
+									{
+										"type": "list",
+										"items": [
+											"A magical scrying sensor appears, taking the form of a ghostly, 1-foot-diameter humanoid eye surrounded by motes of light. The sensor is stationary, though Halaster can reorient the eye to face in any direction. Halaster can see through the eye as though he was in its space. The eye can't be harmed or dispelled, but it winks out within an antimagic field. A scrying eye lasts until Halaster ends the effect (no action required).",
+											"A minor illusory effect is triggered, as though Halaster had cast {@spell minor illusion} in an area. Common illusions include the echo of rattling chains, the distant sound of explosive spells being cast, a dusty cloak or a rusty helm floating as though worn by an invisible figure, and illusory footprints appearing on a dusty floor.",
+											"Silent apparitions of dead adventurers drift through halls and rooms as though they are lost. An apparition can't be harmed, and it doesn't acknowledge creatures or objects in any way. It can't be dispelled but is suppressed within an antimagic field."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/WDMM/Halaster Blackcloak.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/WDMM/Halaster Blackcloak.png?v=1.123.0",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"D",
+				"DR",
+				"E",
+				"I",
+				"U"
+			],
+			"damageTags": [
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible",
+				"stunned",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Mech-Halaster",
+			"group": [
+				"Ragnorra",
+				"Progeny of Ragnorra"
+			],
+			"source": "test",
+			"page": "33B",
+			"size": "G",
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d20 + 90",
+				"average": 247
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 26,
+			"dex": 9,
+			"con": 23,
+			"int": 14,
+			"wis": 15,
+			"cha": 9,
+			"save": {
+				"con": "+11",
+				"wis": "+7",
+				"str": "+13"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"All telepathy 120 ft."
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"3e": [
+							"{@spell earth tremor|XGE}",
+							"{@spell earthbind|XGE}",
+							"{@spell knock}",
+							"{@spell nondetection}"
+						],
+						"1e": [
+							"{@spell chain lightning}",
+							"{@spell dispel magic}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Here to Stay",
+					"entries": [
+						"Cannot be plane-shifted"
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The Machine ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The aboleth has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The mech-halaster is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Gatling",
+					"entries": [
+						"There are two magic missile Gatling guns on the golem with Ac 14 and 52 hit points each"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mecha-Halaster makes two melee attacks. and fires it's Gatling twice"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 20 ft., one target. {@h}24 ({@damage 3d10 + 8}) bludgeoning damage instead of damage it can grapple dc 23 all adjacent creatures also get attacked for half."
+					]
+				},
+				{
+					"name": "Gatling",
+					"entries": [
+						"{@atk rw}  reach 120 ft., one target. {@h}3 ({@damage 1d4 + 1}) force damage +  ({@damage 1d4 + 1}) force damage +  ({@damage 1d4 + 1}) force damage + ({@damage 1d4 + 1}) force damage +  ({@damage 1d4 + 1}) force damage"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Fist",
+					"entries": [
+						"The golem makes a fist attack"
+					]
+				},
+				{
+					"name": "Shake-Off",
+					"entries": [
+						"All creatures on Mech Halaster must make a {@dc 15} Dex Save or fall 150 ft in height"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"An aboleth sarcoma is an {@creature aboleth} that has been corrupted by Ragnorra's influence. Bloated and discolored, this aboleth has fused with the bodies of various humanoids and uses them as though they were spider legs. Combining the psionic power and disease-spreading body of an aboleth with the twisted flesh and positive energy corruption of Ragnorra, this terrifying creature is a perfect example of what Ragnorra believes to be an ideal form of life."
+				]
+			},
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		},
+		{
+			"name": "Adult Red Dragon",
+			"group": "Chromatic Dragon",
+			"source": "test",
+			"page": 98,
+			"size": "H",
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d12 + 154",
+				"average": 297
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 30,
+				"fly": 150,
+				"canHover": false,
+				"swim": 30
+			},
+			"str": 25,
+			"dex": 16,
+			"con": 25,
+			"int": 17,
+			"wis": 14,
+			"cha": 22,
+			"save": {
+				"dex": "+9",
+				"con": "+13",
+				"wis": "+8",
+				"cha": "+12"
+			},
+			"skill": {
+				"perception": "+14",
+				"stealth": "+9",
+				"athletics": "+13",
+				"intimidation": "+12"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 24,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"will": [
+						"{@spell continual flame}",
+						"{@spell fireball}",
+						"{@spell flaming sphere}",
+						"{@spell heat metal}",
+						"{@spell wall of fire}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Unstoppable (3/Short Rest)",
+					"entries": [
+						"At any time, requiring no action, the dragon can take 30 hit points of damage and immediately end all conditions or effects it is suffering. After taking the damage, the dragon cannot take reactions until the start of its next turn."
+					]
+				},
+				{
+					"name": "Overland Flight.",
+					"entries": [
+						"When a dragon is not engaged in an encounter and has flown in a straight line for at least 2 rounds, it can move at 10 times its flying speed."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the adult red dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Dragon Scales",
+					"entries": [
+						"The dragon has resistance to all damage from an attack or effect that originates 150 feet or more from the dragon."
+					]
+				},
+				{
+					"name": "Ignite",
+					"entries": [
+						"Ignite. When an area takes fire damage from the dragon’s Fire Breath it ignites, becoming engulfed in flames for 1 minute. The flames are 10 feet high, opaque, and cover the whole area. A creature takes 7 ({@damage 2d6}) fire damage when it ends is turn within 5 feet of the flames. Additionally, a creature takes the same damage when it enters the flames for the first time on a turn or ends its turn there."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: two with its claws and one with its bite or tail. The dragon can substitute a tail attack for one bite or two claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}23({@damage 3d10 + 7}) piercing damage plus 10 ({@damage 3d6}) fire damage and, if the dragon wishes, the target must make a {@dc 21} Strength throw or be {@condition grappled}. A Medium or smaller creature {@condition grappled} this way is also {@condition restrained}."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage and, if the dragon wishes, the target must make a {@dc 21} Strength throw or be {@condition grappled}. A Medium or smaller creature {@condition grappled} this way is also {@condition restrained}."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 20 ft., one target. {@h}17 ({@damage 3d8 + 7}) bludgeoning damage. If the target is a Large or smaller creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone} and {@condition stunned} until the end of the dragon’s next turn"
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Fire Breath {1/Rest}",
+					"entries": [
+						"The dragon exhales fire in a 90-foot cone or eight 10-foot-by-10-foot contiguous areas within 40 feet of it.  Each creature in that area must make a {@dc 21} Dexterity saving throw, taking 66 ({@damage 12d10}) fire damage and be {@condition incapacitated} until the end of its turn on a failed save, or half as much damage on a successful one. Additionally, any magic or active spell of 6th level or lower in the area ends.",
+						"If a dragon moves in a straight line in the same round that it uses its breath weapon, it can add the movement to the length of its breath weapon. For cone shaped breath weapons, the added length is a line the width of the cone added to the end of the cone."
+					]
+				},
+				{
+					"name": "Immolate Foe",
+					"entries": [
+						"The dragon selects two target it can see within 120 feet of it, which become wrapped in magical flames. The target must make a {@dc 20} Constitution saving throw, loosing any resistance to fire damage for 1 hour and taking than taking 9 ({@damage 2d8}) fire damage on failed save and half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Recharge",
+					"entries": [
+						"The dragon recharges its breath weapon and it can use it on its next turn."
+					]
+				},
+				{
+					"name": "Tail Sweep",
+					"entries": [
+						"Instead of its multiattack action, a dragon can make a Tail Slam attack against each target in a cone the length of its Tail Slam's reach. On a failed save, the target is knocked {@condition prone} or pushed 10 feet*, the dragon's choice, but not {@condition stunned}."
+					]
+				},
+				{
+					"name": "Multi-claws (Flight)",
+					"entries": [
+						"When a flying dragon takes the multiattack action, it can make four claw attacks instead of two claw and one bite attack, if it is attacking another airborne creature."
+					]
+				},
+				{
+					"name": "Snatch",
+					"entries": [
+						"If a dragon flies at least 20 feet straight toward a target and then makes a Bite attack, and the target is three size categories smaller than the dragon, the target is also {@condition grappled} on a hit. A creature {@condition grappled} this way is also {@condition restrained} and moves with the dragon. The dragon cannot make claw attacks against a creature it has snatched, in the same turn the creature was snatched."
+					]
+				},
+				{
+					"name": "Wing Buffet",
+					"entries": [
+						"f the dragon moves at least 40 feet and comes to a stop on its turn, all attacks against the dragon are at disadvantage, the dragon gains a +5 AC bonus against ranged attacks, and the dragon must land at the end of its turn. If the dragon is within 15 feet of the ground containing loose dirt and debris when it stops, all creatures within 150 feet of the dragon must make a {@dc 15} Constitution saving throw or be {@condition blinded}. All effects last until the start of the dragon's next turn."
+					]
+				},
+				{
+					"name": "Dive",
+					"entries": [
+						"If a dragon flies straight down toward an airborne target for at least 60 feet, it can use an action to make a claw attack on the same turn. On a hit the target takes double damage and must make a {@dc 17} Constitution saving throw or be {@condition stunned}."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check and gains advantage on its next attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The dragon can move half its current speed."
+					]
+				},
+				{
+					"name": "Tail Slam (Cost 2 Actions).",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Immolate (Cost 2 Actions).",
+					"entries": [
+						"The dragon uses its Immolate Foe action"
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 3 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 20 feet of the dragon must succeed on a {@dc 21} Strength saving throw or take 14 ({@damage 3d4 + 7}) bludgeoning damage and be pushed 10 feet on a failed save, or half as much damage on a successful one. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Red Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"name": "Adult Red Dragon",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures. The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.",
+									"The scales of a red dragon wyrmling are a bright glossy scarlet, turning a dull, deeper red and becoming as thick and strong as metal as the dragon ages. Its pupils also fade as it ages, and the oldest red dragons have eyes that resemble molten lava orbs.",
+									{
+										"name": "Mountain Masters",
+										"type": "entries",
+										"entries": [
+											"Red dragons prefer mountainous terrain, badlands, and any other locale where they can perch high and survey their domain. Their preference for mountains brings them into conflict with the hill-dwelling copper dragons from time to time."
+										]
+									},
+									{
+										"name": "Arrogant Tyrants",
+										"type": "entries",
+										"entries": [
+											"Red dragons fly into destructive rages and act on impulse when angered. They are so ferocious and vengeful that they are regarded as the archetypical evil dragon by many cultures.",
+											"No other dragon comes close to the arrogance of the red dragon. These creatures see themselves as kings and emperors, and view the rest of dragonkind as inferior. Believing that they are chosen by Tiamat to rule in her name, red dragons consider the world and every creature in it as theirs to command."
+										]
+									},
+									{
+										"name": "Status and Slaves",
+										"type": "entries",
+										"entries": [
+											"Red dragons are fiercely territorial and isolationist. However, they yearn to know about events in the wider world, and they make use of lesser creatures as informants, messengers, and spies. They are most interested in news about other red dragons, with which they compete constantly for status.",
+											"When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive."
+										]
+									},
+									{
+										"name": "Obsessive Collectors",
+										"type": "entries",
+										"entries": [
+											"Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.",
+											"A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Red Dragon's Lair",
+										"entries": [
+											"Red dragons lair in high mountains or hills, dwelling in caverns under snow-capped peaks, or within the deep halls of abandoned mines and dwarven strongholds. Caves with volcanic or geothermal activity are the most highly prized red dragon lairs, creating hazards that hinder intruders and letting searing heat and volcanic gases wash over a dragon as it sleeps. With its hoard well protected deep within the lair, a red dragon spends as much of its time outside the mountain as in it. For a red dragon, the great heights of the world are the throne from which it can look out to survey all it controls-and the wider world it seeks to control.",
+											"Throughout the lair complex, servants erect monuments to the dragon's power, telling the grim story of its life, the enemies it has slain, and the nations it has conquered."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Chromatic Dragons",
+						"entries": [
+							"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
+							{
+								"name": "Driven by Greed",
+								"entries": [
+									" Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
+								],
+								"type": "entries"
+							},
+							{
+								"name": "Creatures of Ego",
+								"type": "entries",
+								"entries": [
+									"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
+								]
+							},
+							{
+								"name": "Dangerous Lairs",
+								"type": "entries",
+								"entries": [
+									"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
+									"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
+								]
+							},
+							{
+								"name": "Queen of Evil Dragons",
+								"type": "entries",
+								"entries": [
+									"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
+									"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
+									"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
+								]
+							}
+						]
+					},
+					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+					"Dragon Age Categories",
+					{
+						"type": "table",
+						"colLabels": [
+							"Category",
+							"Size",
+							"Age Range"
+						],
+						"colStyles": [
+							"col-4",
+							"col-4",
+							"col-4"
+						],
+						"rows": [
+							[
+								"Wyrmling",
+								"Medium",
+								"5 years or less"
+							],
+							[
+								"Young",
+								"Large",
+								"6–100 years"
+							],
+							[
+								"Adult",
+								"Huge",
+								"101–800 years"
+							],
+							[
+								"Ancient",
+								"Gargantuan",
+								"801 years or more"
+							]
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a {@dc 15} Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one.",
+											"A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a {@dc 15} Dexterity saving throw or be knocked {@condition prone}.",
+											"Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the end of its turn. While {@condition poisoned} in this way, a creature is {@condition incapacitated}."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Small earthquakes are common within 6 miles of the dragon's lair.",
+											"Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.",
+											"Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby."
+										]
+									},
+									"If the dragon dies, these effects fade over the course of {@dice 1d10} days."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Red Dragon.jpg"
+						}
+					}
+				]
+			},
+			"dragonCastingColor": "R",
+			"tokenUrl": "https://5e.tools/img/MM/Adult Red Dragon.png?v=1.127.0",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/red-dragon.mp3?v=1.127.0"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"prone",
+				"stunned"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated",
+				"poisoned",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Lich",
+			"source": "test",
+			"page": 202,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+12",
+				"int": "+14",
+				"wis": "+11",
+				"cha": "+12",
+				"dex": "+12",
+				"str": "+2"
+			},
+			"skill": {
+				"arcana": "+19",
+				"history": "+12",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"psychic",
+				"radiant"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common plus up to five other languages"
+			],
+			"cr": {
+				"cr": "21",
+				"lair": "22"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 16} to hit with spell attacks). The lich has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell Tasha's hideous laughter}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}",
+								"{@spell Melf's acid arrow}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell freedom of movement}",
+								"{@spell greater invisibility}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell cloudkill}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage}",
+								"{@spell prismatic spray}",
+								"{upcast Globe}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell feeblemind}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell ravenous void|EGW}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the lich fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If it has a phylactery, a destroyed lich gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The lich has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Grim Harvest",
+					"entries": [
+						"Once per turn, when the lich reduces a creature to 0 hit points with a spell, it gains twice the spell’s level in hit points or three times the spell’s level if it belongs to the School of",
+						"Necromancy."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}21 ({@damage 6d6}) cold damage. The target must succeed on a {@dc 22} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield (No Spell Slot)",
+					"entries": [
+						"+5 to Ac"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"The lich casts a cantrip."
+					]
+				},
+				{
+					"name": "Paralyzing Touch (Costs 2 Actions)",
+					"entries": [
+						"The lich uses its Paralyzing Touch."
+					]
+				},
+				{
+					"name": "Frightening Gaze (Costs 2 Actions)",
+					"entries": [
+						"The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a {@dc 22} Wisdom saving throw against this magic taking 22 ({@damage 4d10}) necrotic damage on a failed save and become {@condition frightened} for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful half damage or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours."
+					]
+				},
+				{
+					"name": "Disrupt Life (Costs 3 Actions)",
+					"entries": [
+						"Each non-undead creature within 20 feet of the lich must make a {@dc 22} Constitution saving throw against this magic, taking 21 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one lich heals for total damage."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The lich can move half its speed"
+					]
+				},
+				{
+					"name": "Staff of Power",
+					"entries": [
+						"Lich casts a Staff of Power Spell or breaks the Staff",
+						"20 charges: magic",
+						"missile and ray of enfeeblement cost 1 charge, levitate 2 charges,",
+						"cone of cold, fireball, hold monster, and lightning bolt cost 5 charges",
+						"and are cast at 5th level, globe of invulnerability costs 6 charges"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Lich",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Lich",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.",
+									"A lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.",
+									{
+										"name": "Secrets of Undeath",
+										"type": "entries",
+										"entries": [
+											"No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to Orcus, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.",
+											"A lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the Outer Planes after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.",
+											"With its phylactery prepared, the future lich drinks a potion of transformation-a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains."
+										]
+									},
+									{
+										"name": "Soul Sacrifices",
+										"type": "entries",
+										"entries": [
+											"A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the {@spell imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a dispel magic cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.",
+											"A lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a demilich."
+										]
+									},
+									{
+										"name": "Death and Restoration",
+										"type": "entries",
+										"entries": [
+											"When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.",
+											"Destroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself."
+										]
+									},
+									{
+										"name": "Lonely Existence",
+										"type": "entries",
+										"entries": [
+											"From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.",
+											"Few liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King."
+										]
+									},
+									{
+										"name": "Magic Collectors",
+										"type": "entries",
+										"entries": [
+											"Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spellbooks, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A lich doesn't require air, food, drink, or sleep."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Lich's Lair",
+										"entries": [
+											"A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps. Everything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.",
+											"A lich encountered in its lair has a challenge rating of 22 (41,000 XP)."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"The lich rolls a {@dice d8} and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.",
+											"The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a {@dc 18} Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.",
+											"The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, taking 52 ({@damage 15d6}) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Lich.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.131.6",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/lich.mp3?v=1.131.6"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"C",
+				"N"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

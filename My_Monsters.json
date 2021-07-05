@@ -20,7 +20,7 @@
 	},
 	"monster": [
 		{
-			"name": "Better Halaster Blackcloak v2",
+			"name": "Better Halaster Blackcloak v2.1",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "test",

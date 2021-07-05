@@ -15,8 +15,8 @@
 				]
 			}
 		],
-		"dateAdded": 1625498812,
-		"dateLastModified": 1625498812
+		"dateAdded": 1625499670,
+		"dateLastModified": 1625499670
 	},
 	"monster": [
 		{
@@ -304,7 +304,37 @@
 				{
 					"name": "Blast Scepter",
 					"entries": [
-						"Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes {@dice 5d8} thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed"
+						"Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes {@damage 5d8} thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed"
+					]
+				},
+				{
+					"name": "Lair: Laser Grid Partition",
+					"entries": [
+						"The room is divided into 8 quadrants (4 on floor and room halfway up) anyone aside from Halaster moving through the barrier takes {@damage 10d6} radiant damage."
+					]
+				},
+				{
+					"name": "Lair: Laser Grid Lockdown",
+					"entries": [
+						"A fine mesh of lasers covers the room causing anyone but Halaster to take {@damage 2d6} radiant damage for every 5ft. of movement"
+					]
+				},
+				{
+					"name": "Lair: Boon or Bane?!",
+					"entries": [
+						"Roll a {@dice d4} and draw a card from the Elder Rune deck say the name of the elder rune to a player and ask Boon or Bane if boon Halster gains the effect of the Boon if Bane the player must save against the Bane effect {@dc 20}"
+					]
+				},
+				{
+					"name": "Lair: Who's Who?",
+					"entries": [
+						"4 Illusionary Duplicates of Halaster appear Halaster is one of them if a wrong duplicate is picked a 10ft radius fireball {@dice 8d6} will trigger at its location duplicates have an AC of 22"
+					]
+				},
+				{
+					"name": "Lair: Corrupting Weave",
+					"entries": [
+						"Halaster animates a 5th level or lower spell that was cast the last turn "
 					]
 				}
 			],

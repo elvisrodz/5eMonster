@@ -15,12 +15,12 @@
 				]
 			}
 		],
-		"dateAdded": 1625499670,
-		"dateLastModified": 1625499670
+		"dateAdded": 1625917924,
+		"dateLastModified": 1625917924
 	},
 	"monster": [
 		{
-			"name": "Better Halaster Blackcloak v2.1",
+			"name": "Better Halaster Blackcloak v2",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "test",
@@ -1684,6 +1684,7 @@
 							"spells": [
 								"{@spell Bigby's hand}",
 								"{@spell cloudkill}",
+								"{@spell synaptic static|XGE}",
 								"{@spell wall of force}"
 							],
 							"slots": 3
@@ -1691,7 +1692,8 @@
 						"6": {
 							"spells": [
 								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
+								"{@spell globe of invulnerability}",
+								"{@spell mental prison|XGE}"
 							],
 							"slots": 1
 						},
